@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productos- Mi Tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./SCSS/diseno.css">
+</head>
+<body>
+    <header class="header">  
+    <div class="header__container">
+        <a href="index.html" class="header__logo">
+            Mi Tienda</a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+    <li class="nav-item dropdown">
+    <a 
+        class="nav-link dropdown-toggle" 
+        href="#" 
+        role="button" 
+        data-bs-toggle="dropdown" 
+        aria-expanded="false">
+        Productos
+    </a>
+
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="productos.html">Todos los productos</a></li>
+        <li><a class="dropdown-item" href="#">Cascos</a></li>
+        <li><a class="dropdown-item" href="#">Accesorios</a></li>
+        <li><a class="dropdown-item" href="#">Ropa de ciclismo</a></li>
+    </ul>
+    </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="header__cart">Carrito</a>
+    </div>
+</header>
+<!-- ========================================= -->
+<!-- BANNER PRODUCTOS -->
+<!-- ========================================= -->
+
+<section class="banner-productos">
+
+    <div class="banner-productos__contenido">
+
+        <h1>Todos nuestros productos</h1>
+        <p>
+            Explora nuestro catálogo de accesorios y equipamiento para ciclistas de montaña, ruta y ciudad.
+        </p>
+    </div>
+</section>
+<!-- ========================================= -->
+<!-- CATEGORÍAS -->
+<!-- ========================================= -->
+
+<section class="categorias">
+
+    <div class="container text-center">
+
+        <h2 class="mb-4">Categorías</h2>
+
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+
+            <button class="btn btn-outline-dark">Todos</button>
+
+            <button class="btn btn-outline-dark">Cascos</button>
+
+            <button class="btn btn-outline-dark">Guantes</button>
+
+            <button class="btn btn-outline-dark">Luces</button>
+
+            <button class="btn btn-outline-dark">Ropa</button>
+
+            <button class="btn btn-outline-dark">Accesorios</button>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ========================================= -->
+<!-- CATÁLOGO DE PRODUCTOS -->
+<!-- ========================================= -->
+
+<section class="catalogo">
+
+    <div class="catalogo__container">
+
+        <h2>Productos</h2>
+
+        <div class="catalogo__grid">
+            <!-- Tarjeta 1 -->
+            <article class="producto">
+
+    <img src="./imagenes/casco de bici.webp" alt="Casco MTB">
+
+    <h3>Casco MTB</h3>
+
+    <p>$120.000</p>
+
+    <button class="producto__boton">
+        Comprar
+    </button>
+
+</article>
+<!-- Tarjeta 2 -->
+<article class="producto">
+
+    <img src="./imagenes/P Guantes.webp" alt="Guantes de ciclismo">
+
+    <h3>Guantes de ciclismo</h3>
+
+    <p>$65.000</p>
+
+    <button class="producto__boton">
+        Comprar
+    </button>
+
+</article>
+<!-- Tarjeta 3 -->
+<article class="producto">
+
+    <img src="./imagenes/P luces.webp" alt="Kit de luces LED">
+
+    <h3>Kit de Luces LED</h3>
+
+    <p>$85.000</p>
+
+    <button class="producto__boton">
+        Comprar
+    </button>
+
+</article>
+<!-- Tarjeta 4 -->
+<article class="producto">
+
+    <img src="./imagenes/p jersey de ciclismo.webp" alt="Jersey de ciclismo">
+
+    <h3>Jersey de ciclismo</h3>
+
+    <p>$150.000</p>
+
+    <button class="producto__boton">
+        Comprar
+    </button>
+    </article>
+    <!-- Tarjeta 5 -->
+<article class="producto">
+
+    <img src="./imagenes/p culotte.webp" alt="Culotte de ciclismo">
+
+    <h3>Culotte de ciclismo</h3>
+
+    <p>$170.000</p>
+
+    <button class="producto__boton">
+        Comprar
+    </button>
+</article>
+<!-- Tarjeta 6 -->
+<article class="producto">
+
+    <img src="./imagenes/p gafas de ciclismo.webp" alt="Gafas deportivas">
+
+    <h3>Gafas deportivas</h3>
+
+    <p>$90.000</p>
+
+    <button class="producto__boton">
+        Comprar
+    </button>
+
+</article>
+<!-- Tarjeta 7 -->
+<article class="producto">
+
+    <img src="./imagenes/p porta caramañola.webp" alt="Portacaramañola">
+
+    <h3>Portacaramañola aluminio</h3>
+
+    <p>$45.000</p>
+
+    <button class="producto__boton">
+        Comprar
+    </button>
+
+</article>
+<!-- Tarjeta 8 -->
+<article class="producto">
+
+    <img src="./imagenes/p multiherramienta.webp" alt="Multiherramienta">
+
+    <h3>Multiherramienta MTB</h3>
+
+    <p>$55.000</p>
+
+    <button class="producto__boton">
+        Comprar
+    </button>
+</article>
+<!-- Tarjeta 9 -->
+<article class="producto">
+
+    <img src="./imagenes/p inflador portatil.webp" alt="Inflador portátil">
+
+    <h3>Inflador portátil</h3>
+
+    <p>$70.000</p>
+
+    <button class="producto__boton">
+        Comprar
+    </button>
+
+</article>
+        </div>
+
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
