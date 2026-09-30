@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./SCSS/diseno.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Mi tienda de ciclismo</title>
+</head>
+<body>
+    <!-- ========================================= -->
+<!-- ENCABEZADO -->
+<!-- ========================================= -->
+    <header class="header">
+    <div class="header__container">
+        <a href="index.html" class="header__logo">
+            Mi Tienda</a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+    <li class="nav-item dropdown">
+    <a 
+        class="nav-link dropdown-toggle" 
+        href="#" 
+        role="button" 
+        data-bs-toggle="dropdown" 
+        aria-expanded="false">
+        Productos
+    </a>
+
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="productos.html">Todos los productos</a></li>
+        <li><a class="dropdown-item" href="#">Cascos</a></li>
+        <li><a class="dropdown-item" href="#">Accesorios</a></li>
+        <li><a class="dropdown-item" href="#">Ropa de ciclismo</a></li>
+    </ul>
+    </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="header__cart">Carrito</a>
+    </div>
+</header>
+<section class="banner">
+    <div class="banner__content">
+    <h1>todo para llevar tu ciclismo al siguiente nivel</h1>
+    <p>encuentra bicicletas, accesorios y equipamiento para disfrutar cada recorrido.</p>
+    <a href="productos.html">ver productos</a>
+    </div>
+    <div class="banner__image">
+        <img src="./imagenes/banner.jpg" alt="articulos de ciclismo"></div>
+</section>
+ <!-- Productos destacados -->
+<section class="productos">
+    <div class="productos__container">
+        <h2>Productos Destacados</h2>
+        <div class="productos__grid">
+            <article class="producto">
+                <img src="./imagenes/casco de bici.webp" alt="Casco para ciclismo">
+                <h3>Casco MTB</h3>
+                <p>$120.000</p>
+            <button 
+            type="button" 
+            class="producto__boton" 
+            data-bs-toggle="modal" 
+            data-bs-target="#modalProducto">
+            Comprar
+            </button>
+            </article>
+            <article class="producto">
+
+                <img src="./imagenes/guantes para bicicleta.webp" alt="Guantes para ciclismo">
+                
+                <h3>Guantes de ciclismo</h3>
+                
+                <p>$65.000</p>
+                <button 
+                type="button" 
+                class="producto__boton" 
+                data-bs-toggle="modal" 
+                data-bs-target="#modalGuantes">
+                Comprar
+                </button>
+                </article>
+                <article class="producto">
+                <img src="./imagenes/luces led.webp" alt="luces para bicicleta">
+                <h3>Kit de luces LED</h3>
+                <p>$85.000</p>
+                <button type="button"
+                class="producto__boton"
+                data-bs-toggle="modal"
+                data-bs-target="#modalLuces">
+                comprar
+            </button>
+            </article>
+            <!-- ========================================= -->
+            <!-- MODALES -->
+            <!-- ========================================= -->
+            <div class="modal fade" id="modalLuces" tabindex="-1" aria-labelledby="modalLucesLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalLucesLabel">
+                    Kit de Luces LED
+                </h2>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar">
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <p>Kit de luces LED delantera y trasera recargables por USB.</p>
+                <p><strong>Precio: $85.000</strong></p>
+            </div>
+
+            <div class="modal-footer">
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal">
+                    Cancelar
+                </button>
+
+                <button
+                    type="button"
+                    class="btn btn-primary">
+                    Agregar al carrito
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<div class="modal fade" id="modalProducto" tabindex="-1" aria-labelledby="modalProductoLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalProductoLabel">
+                    Casco MTB
+                </h2>
+            </div>
+
+            <div class="modal-body">
+                <p>Casco para ciclismo de montaña.</p>
+                <p><strong>Precio: $120.000</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    data-bs-dismiss="modal">
+                    Cancelar
+                </button>
+            <button type="button" class="btn btn-primary">
+            Agregar al carrito
+        </button>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="modal fade"
+     id="modalGuantes"
+     tabindex="-1"
+     aria-labelledby="modalGuantesLabel"
+     aria-hidden="true">
+
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalGuantesLabel">
+                    Guantes de ciclismo
+                </h2>
+            </div>
+            <div class="modal-body">
+                <p>Guantes de ciclismo</p>
+                <p><strong>Precio: $65.000</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button 
+                    type="button" 
+                    class="btn btn-secondary" 
+                    data-bs-dismiss="modal">
+                    Cancelar
+                </button>
+            <button type="button" class="btn btn-primary">
+            Agregar al carrito
+        </button>
+        </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
